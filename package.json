@@ -1,6 +1,6 @@
 {
   "name": "@wisdomgarden/capacitor-screen-orientation",
-  "version": "0.0.4-2",
+  "version": "0.0.4-3",
   "description": "Handle screen orientation of a mobile device. ",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",
@@ -36,7 +36,7 @@
     "dist/",
     "ios/",
     "android/",
-    "CapacitorScreenOrientation.podspec"
+    "WisdomgardenCapacitorScreenOrientation.podspec"
   ],
   "keywords": [
     "capacitor",
