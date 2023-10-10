@@ -63,7 +63,9 @@ NotificationCenter.default.addObserver(self, selector: #selector(self.rotated), 
     
      @objc public func unlockScreenOrientation(_ call: CAPPluginCall) {
         let lock = ["orientation":0]
-         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CAPOrientationLocked"), object: self, userInfo: lock )
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CAPOrientationLocked"), object: self, userInfo: lock )
+            UIDevice.current.setValue(0, forKey: "orientation")
+            UINavigationController.attemptRotationToDeviceOrientation()
     }
     
     @objc public func rotateTo(_ call: CAPPluginCall) {
