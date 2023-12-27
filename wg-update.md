@@ -2,3 +2,6 @@
 
 ### wg version:1-3
 fix iphone unlock orientation
+
+### wg version:1-4
+fix iphone unlock orientation crash by ios16+
